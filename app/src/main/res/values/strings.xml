@@ -6,4 +6,17 @@
     <string name="altura">Altura</string>
     <string name="peso">Peso</string>
     <string name="edad">Edad</string>
+    <string name="calcular">Calcular</string>
+    <string name="recalcular">Re-Calcular</string>
+
+    <string name="PesoNormal">En Línea</string>
+    <string name="Infrapeso">Infrapeso</string>
+    <string name="Sobrepeso">Sobrepeso</string>
+    <string name="Obesidad">Obesidad</string>
+
+    <string name="TextInfrapeso">Por debajo de tu peso óptimo</string>
+    <string name="TextNormal">Estás en tu peso óptimo</string>
+    <string name="TextSobrepeso">Estás por encima de tu peso óptimo</string>
+    <string name="TextObesidad">Tienes un problema de obesidad</string>
+
 </resources>

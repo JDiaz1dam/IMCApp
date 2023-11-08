@@ -123,15 +123,17 @@
                 android:text="@string/altura"
                 android:textAllCaps="true"
                 android:textColor="@color/title_text"
+
                 />
 
             <TextView
                 android:id="@+id/tvHeight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="120 cm"
+                android:text="120"
                 android:textSize="38sp"
                 android:textStyle="bold"
+                android:textColor="@color/text"
                 />
 
             <com.google.android.material.slider.RangeSlider
@@ -185,7 +187,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="28dp"
                 android:textStyle="bold"
-                android:textColor="@color/bg_button"
+                android:textColor="@color/text"
                 android:id="@+id/textPeso"
                 >
 
@@ -239,13 +241,11 @@
         >
 
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_margin="16dp"
-            >
+            android:orientation="vertical">
 
 
             <TextView
@@ -253,55 +253,67 @@
                 android:layout_height="wrap_content"
                 android:text="@string/edad"
                 android:textAllCaps="true"
-                android:textColor="@color/title_text"
-                >
+                android:textColor="@color/title_text">
 
             </TextView>
 
             <TextView
+                android:id="@+id/textEdad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text"
                 android:textSize="28dp"
-                android:textStyle="bold"
-                android:textColor="@color/bg_button"
-                android:id="@+id/textEdad"
-                >
+                android:textStyle="bold">
 
             </TextView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center"
-            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
 
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fabmAge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:backgroundTint="@color/bg_fab"
-                app:tint="@color/white"
-                android:src="@drawable/minus_svgrepo_com"
-                android:layout_marginEnd="16dp"
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabmAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/minus_svgrepo_com"
+                    app:backgroundTint="@color/bg_fab"
+                    app:tint="@color/white"
 
-                />
+                    />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fabpAge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:backgroundTint="@color/bg_fab"
-                app:tint="@color/white"
-                android:src="@drawable/plus_svgrepo_com"
-                />
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabpAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plus_svgrepo_com"
+                    app:backgroundTint="@color/bg_fab"
+                    app:tint="@color/white" />
 
-        </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/calcular"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/bg_button"
+        android:id="@+id/calcButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
 
 
 

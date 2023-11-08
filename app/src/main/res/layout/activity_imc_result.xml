@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImcResultActivity"
+
+    android:background="@color/bg_app"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="32dp"
+    >
+    
+    <TextView
+        android:id="@+id/tvTuResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tu Resultado"
+        android:textColor="@color/text"
+        android:textSize="32dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvResultado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/bg_comp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTuResultado">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            >
+
+            <TextView
+                android:id="@+id/textCorporal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:gravity="center"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/resultadoIMC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="48dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/recalcButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/recalcular"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/bg_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
