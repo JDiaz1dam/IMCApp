@@ -8,9 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="bg_comp">#66545e</color>
-    <color name="bg_comp_sel">#a39193</color>
-    <color name="bg_app">#aa6f73</color>
-    <color name="bg_button">#eea990</color>
-    <color name="title_text">#f6e0b5</color>
+    <color name="bg_comp">#967857</color>
+    <color name="bg_comp_sel">#6a5237</color>
+    <color name="bg_app">#c3a580</color>
+    <color name="bg_button">#443423</color>
+    <color name="title_text">#f2dfc3</color>
 </resources>
