@@ -2,9 +2,11 @@ package com.pmdm.imcapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.slider.RangeSlider
 import java.text.DecimalFormat
 
@@ -17,15 +19,22 @@ class MainActivity : AppCompatActivity() {
 
         initListeners()
 
-        //initUI()
+        initUI()
 
     }
 
     private lateinit var viewmale:CardView
     private lateinit var viewfemale:CardView
 
-    private lateinit var tvHeight:CardView
+    private lateinit var tvHeight:TextView
     private lateinit var rsHeight:RangeSlider
+
+    private lateinit var tvAge:TextView
+    private lateinit var tvPeso:TextView
+    private lateinit var fabmAge:FloatingActionButton
+    private lateinit var fabpAge:FloatingActionButton
+    private lateinit var fabmPeso:FloatingActionButton
+    private lateinit var fabpPeso:FloatingActionButton
 
     private var ismaleSeclected :Boolean = true
 
@@ -33,8 +42,15 @@ class MainActivity : AppCompatActivity() {
         viewmale = findViewById(R.id.viewmale)
         viewfemale = findViewById(R.id.viewfemale)
 
-        //ME PETA tvHeight = findViewById(R.id.tvHeight)
-        //ME PETA rsHeight = findViewById(R.id.rsHeight)
+        tvHeight = findViewById(R.id.tvHeight)
+        rsHeight = findViewById(R.id.rsHeight)
+
+        tvAge = findViewById(R.id.tvAge)
+        tvPeso = findViewById(R.id.tvPeso)
+        fabmAge = findViewById(R.id.fabmAge)
+        fabpAge = findViewById(R.id.fabpAge)
+        fabmPeso = findViewById(R.id.fabmPeso)
+        fabpPeso = findViewById(R.id.fabpPeso)
 
     }
 
@@ -49,10 +65,26 @@ class MainActivity : AppCompatActivity() {
             setGenderColor()
         }
 
-        //rsHeight.addOnChangeListener { _, value, _ ->
-        //tvHeight.text = value.toString()
-        //tvHeight.text = (DecimalFormat("#.##").format(value) + "cm"
-        //}
+        rsHeight.addOnChangeListener { _, value, _ ->
+        tvHeight.text = value.toString()
+        tvHeight.text = (DecimalFormat("#.##").format(value) + "cm")
+        }
+
+        fabmAge.setOnClickListener {
+
+        }
+
+        fabpAge.setOnClickListener {
+
+        }
+
+        fabmPeso.setOnClickListener {
+
+        }
+
+        fabpPeso.setOnClickListener {
+
+        }
 
     }
 
